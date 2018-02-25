@@ -1,21 +1,41 @@
 # Desafio da semana #4
 
-```js
+````js
 /*
 Declare uma variável chamada `isTruthy`, e atribua a ela uma função que recebe
 um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+var isTruthy = function(x) {
+	if (x) {
+		return true;
+	} else { 
+		return false;
+	}
+} 
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+isTruthy(0);
+isTruthy(false);
+isTruthy(-0);
+isTruthy('');
+isTruthy(null);
+isTruthy(undefined);
+isTruthy("");
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+isTruthy('a');
+isTruthy('b');
+isTruthy('c');
+isTruthy(10);
+isTruthy(true);
+isTruthy('ninja');
+isTruthy('java');
+isTruthy('script');
+isTruthy('Ok');
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -29,7 +49,16 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-?
+var carro = {
+	marca: 'Fiat',
+	modelo: 'Bravo',
+	placa: 'OIK-1111',
+	ano: 2013,
+	cor: 'cinza',
+	quantasPortas: 4,
+	assentos: 5,
+	quantidadePessoas: 0
+}
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
