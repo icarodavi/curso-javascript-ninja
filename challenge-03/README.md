@@ -1,8 +1,12 @@
-# Desafio da semana #3
+# Desafio da semana 3#
 
 ````js
 // Declarar uma variável qualquer, que receba um objeto vazio.
+<<<<<<< HEAD
 var obj = {};
+=======
+var objeto = {};
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 Declarar uma variável `pessoa`, que receba suas informações pessoais.
@@ -21,7 +25,11 @@ var pessoa = {
 	sobrenome: 'Monteiro',
 	sexo: 'Masculino',
 	idade: 30,
+<<<<<<< HEAD
 	altura: 1.65,
+=======
+	altura: 1.85,
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 	peso: 80,
 	andando: false,
 	caminhouQuantosMetros: 0
@@ -32,8 +40,13 @@ Adicione um método ao objeto `pessoa` chamado `fazerAniversario`. O método dev
 alterar o valor da propriedade `idade` dessa pessoa, somando `1` a cada vez que
 for chamado.
 */
+<<<<<<< HEAD
 pessoa.fazerAniversario = function() {
 	pessoa.idade += 1;
+=======
+pessoa.fazerAniversario = function () {
+	pessoa.idade++;
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 }
 
 /*
@@ -64,7 +77,11 @@ Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
 pessoa.nomeCompleto = function() {
+<<<<<<< HEAD
 	return 'Olá! Meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome;
+=======
+	return 'Olá! Meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 }
 
 /*
@@ -88,7 +105,11 @@ Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
 pessoa.mostrarAltura = function() {
+<<<<<<< HEAD
 	return 'Minha altura é ' + pessoa.altura + 'm.';
+=======
+	return 'Minha altura é ' + pessoa.altura +'m.';
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 }
 
 /*
@@ -96,7 +117,11 @@ Agora vamos brincar um pouco com o objeto criado:
 Qual o nome completo da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
+<<<<<<< HEAD
 pessoa.nomeCompleto(); // 'Olá! Meu nome é Icaro Monteiro'
+=======
+// 'Olá! Meu nome é Icaro Monteiro!'
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 Qual a idade da pessoa? (Use a instrução para responder e comentários
@@ -108,12 +133,23 @@ pessoa.mostrarIdade(); //'Olá, eu tenho 30 anos!'
 Qual o peso da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
+<<<<<<< HEAD
 pessoa.mostrarPeso(); //'Eu peso 80Kg.
+=======
+80 //pessoa.mostrarPeso();
+
+
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 /*
 Qual a altura da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
+<<<<<<< HEAD
 pessoa.mostrarAltura(); //'Minha altura é 1.65m.'
+=======
+1.85 //pessoa.mostrarAltura();
+
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 Faça a `pessoa` fazer 3 aniversários.
@@ -127,21 +163,35 @@ Quantos anos a `pessoa` tem agora? (Use a instrução para responder e
 comentários inline ao lado da instrução para mostrar qual foi a resposta
 retornada)
 */
+<<<<<<< HEAD
 pessoa.mostrarIdade(); //'Olá, eu tenho 33 anos!'
+=======
+33 //pessoa.mostrarIdade();
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 Agora, faça a `pessoa` caminhar alguns metros, invocando o método `andar` 3x,
 com metragens diferentes passadas por parâmetro.
 */
+<<<<<<< HEAD
 pessoa.andar(1);
 pessoa.andar(2);
 pessoa.andar(7);
+=======
+pessoa.andar(3);
+pessoa.andar(7);
+pessoa.andar(10);
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 A pessoa ainda está andando? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
+<<<<<<< HEAD
 pessoa.andando //true
+=======
+Sim //pessoa.andando
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 Se a pessoa ainda está andando, faça-a parar.
@@ -152,13 +202,21 @@ pessoa.parar();
 E agora: a pessoa ainda está andando? (Use uma instrução para responder e
 comentários inline ao lado da instrução para mostrar a resposta retornada)
 */
+<<<<<<< HEAD
 pessoa.andando //false
+=======
+Não //pessoa.andando
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
+<<<<<<< HEAD
 pessoa.caminhouQuantosMetros //10
+=======
+20 //pessoa.caminhouQuantosMetros
+>>>>>>> 841f658ba8ef0024f1455cc7b1e44f34daf5a6e1
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
