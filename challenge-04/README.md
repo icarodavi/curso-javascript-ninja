@@ -172,5 +172,5 @@ carro.quantidadePessoas = 1;
 carro.adicionaPessoas(10); _'Só cabem mais 4 pessoas!'_
 
 // Quantas pessoas temos no carro?
-carro.quantidadePessoas _1_
+carro.quantidadePessoas //1
 ```
