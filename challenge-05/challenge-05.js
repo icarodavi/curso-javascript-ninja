@@ -2,17 +2,20 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-// ?
+var myarray = ['jose', 1, true, false, 4];
 
 /*
-Crie uma função que receba um array como parâmetro, e retorne esse array.
+Crie uma função que receba um array como parâmetro, 
+e retorne esse array.
 */
-// ?
+function novaFuncao(arr) {
+    return arr;
+}
 
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-// ?
+console.log(myarray[1]);
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -20,35 +23,54 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-// ?
+function segundaFuncao(arr,indice) {
+    return arr[indice];
+}
 
 /*
-Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
+Declare uma variável que recebe um array com 5 valores, 
+de tipos diferentes.
 */
-// ?
+var novaArr = [1, 'novo', true, {}, function () {}];
 
 /*
-Invoque a função criada acima, fazendo-a retornar todos os valores do último
+Invoque a função criada acima, fazendo-a retornar todos 
+os valores do último
 array criado.
 */
-// ?
+console.log(segundaFuncao(novaArr,0));
+console.log(segundaFuncao(novaArr,1));
+console.log(segundaFuncao(novaArr,2));
+console.log(segundaFuncao(novaArr,3));
+console.log(segundaFuncao(novaArr,4));
 
 /*
-Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
-livro. Dentro dessa função, declare uma variável que recebe um objeto com as
-seguintes características:
-- esse objeto irá receber 3 propriedades, que serão nomes de livros;
-- cada uma dessas propriedades será um novo objeto, que terá outras 3
-propriedades:
+Crie uma função chamada `book`, que recebe um parâmetro, 
+que será o nome do livro. Dentro dessa função, declare uma 
+variável que recebe um objeto com asseguintes características:
+- esse objeto irá receber 3 propriedades, que serão nomes de
+ livros;
+- cada uma dessas propriedades será um novo objeto, que terá outras 3 propriedades:
     - `quantidadePaginas` - Number (quantidade de páginas)
     - `autor` - String
     - `editora` - String
-- A função deve retornar o objeto referente ao livro passado por parâmetro.
-- Se o parâmetro não for passado, a função deve retornar o objeto com todos
-os livros.
+- A função deve retornar o objeto referente ao livro passado por 
+parâmetro.
+- Se o parâmetro não for passado, a função deve retornar 
+o objeto com todos os livros.
 */
-// ?
-
+function Book(nome, qtdPag, autor, editora) {
+    livro = {
+        nome: nome, 
+        caracteristicas: {
+            quantidadePaginas: qtdPag,
+            autor: autor,
+            editora:  editora
+        }
+    }
+    return livro;
+}
+console.log(Book('livro',3, 'eu', 'massa'));
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
