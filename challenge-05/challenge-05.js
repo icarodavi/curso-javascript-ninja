@@ -50,7 +50,8 @@ que será o nome do livro. Dentro dessa função, declare uma
 variável que recebe um objeto com asseguintes características:
 - esse objeto irá receber 3 propriedades, que serão nomes de
  livros;
-- cada uma dessas propriedades será um novo objeto, que terá outras 3 propriedades:
+- cada uma dessas propriedades será um novo objeto, que terá 
+outras 3 propriedades:
     - `quantidadePaginas` - Number (quantidade de páginas)
     - `autor` - String
     - `editora` - String
@@ -59,18 +60,27 @@ parâmetro.
 - Se o parâmetro não for passado, a função deve retornar 
 o objeto com todos os livros.
 */
-function Book(nome, qtdPag, autor, editora) {
-    livro = {
-        nome: nome, 
-        caracteristicas: {
-            quantidadePaginas: qtdPag,
-            autor: autor,
-            editora:  editora
+function Book(bookName) {
+    var allBooks = {
+        'Segredos do Ninja JavaScript': {
+            quantidadePaginas: 488,
+            autor: 'John Resig & Bear Bibeault',
+            editora: 'Novatec'
+        },
+        'Introdução ao HTML5': {
+            quantidadePaginas: 220,
+            autor: 'Bruce Lawson & Remy Sharp',
+            editora: 'Alta Books'
+        },
+        'Smashing CSS': {
+            quantidadePaginas: 283,
+            autor: 'Erick A. Meyer',
+            editora: 'Bookman'
         }
-    }
-    return livro;
+    };
+    return !bookName ? allBooks : allBooks[bookName];
 }
-console.log(Book('livro',3, 'eu', 'massa'));
+console.log(Book('Introdução ao HTML5'));
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
