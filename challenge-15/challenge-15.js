@@ -1,4 +1,4 @@
-/*
+(function() {/*
 Envolva todo o código desse desafio em uma IIFE.
 Crie um arquivo chamado index.html e adicione esse script ao HTML.
 */
@@ -21,7 +21,20 @@ as seguintes características:
   adicionados à idade original (age). Esse método deverá retornar o objeto
   que será instanciado.
 */
-// ?
+function Person(name, lastName, age) {
+  this.name = name;
+  this.lastName = lastName;
+  this.age = age;
+  this.getFullName = function getFullName() {
+    return this.name + ' ' + this.lastName;
+  }
+  this.getAge = function getAge() {
+    return this.age;
+  }
+  this.addAge() {
+    this.age += arguments[0];
+  }
+}
 
 /*
 Crie 3 novos objetos usando o construtor acima. Os objetos serão novas
@@ -52,3 +65,4 @@ cada um. A frase deverá ser no formato:
 */
 console.log( '\nNova idade das pessoas:' );
 // ?
+})();
