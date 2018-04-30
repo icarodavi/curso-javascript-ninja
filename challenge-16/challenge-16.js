@@ -84,13 +84,13 @@ de qualquer tamanho, escrito de qualquer forma.
 Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
 */
   console.log("\nNome com letras intercaladas entre caixa alta e baixa:");
-  var myName = 'Icaro';
+  var myName = 'Icaro Davi Tavares Monteiro';
   function alterarNome(x) {
     var myNewName = [];
-    for (var i = 0, len = x.leng; i < len; i++) {
+    for (var i = 0, len = x.length; i < len; i++) {
       myNewName.push(i % 2 === 0 ? x[i].toLowerCase() : x[i].toUpperCase());
-      return myNewName;
     }
+    return myNewName.join('');
   };
   console.log(alterarNome(myName));
 })();
