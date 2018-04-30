@@ -53,25 +53,17 @@ O resultado final deve ficar mais ou menos assim:
 */
   console.log("\nMeus amigos:");
   var amigos = ["João", "Maria", "Roberto", "Pedro", "Marcos"];
-  function meusAmigos(x) {
-    var resultado = '';
-    for (var i = 0; i < x.length; i++) {
-      if (i === x.length - 1) {
-        resultado = resultado.concat(" e " + x[i] + " são meus amigos.");
-        console.log("fim");
-      } else {
-        console.log(x[i]);
-        resultado = resultado.concat(x[i] + ', ');
-      }
-    }
-  }
-  console.log(meusAmigos(amigos));
+  var frase = amigos.reduce((acumulado, atual, index) => {
+    var separador = amigos.length - 1 === index ? ' e ' : ', ';
+    return acumulado + separador + atual;
+  }).concat(' são meus amigos.');
+  console.log(frase);
   /*
 Usando o replace(), faça a string "Roberto" virar "Roberta".
 Mostre o resultado no console.
 */
   console.log('\nEra "Roberto", agora é:');
-  // ?
+  console.log(frase.replace('Roberto','Roberta'));
 
   /*
 Mostre no console a parte "nando" da string "Fernando". Use o método que
