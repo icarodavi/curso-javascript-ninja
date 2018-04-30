@@ -66,11 +66,13 @@ Mostre o resultado no console.
   console.log(frase.replace('Roberto','Roberta'));
 
   /*
-Mostre no console a parte "nando" da string "Fernando". Use o método que
+Mostre no console a parte "nando" da string "Fernando".
+Use o método que
 faz a busca do final para o início da string.
 */
   console.log("\nParte de uma string:");
-  // ?
+
+  console.log('Fernando'.substring(8,3));
 
   /*
 Declare uma variável chamada `myName`, que receba o seu primeiro nome,
@@ -82,5 +84,13 @@ de qualquer tamanho, escrito de qualquer forma.
 Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
 */
   console.log("\nNome com letras intercaladas entre caixa alta e baixa:");
-  // ?
+  var myName = 'Icaro';
+  function alterarNome(x) {
+    var myNewName = [];
+    for (var i = 0, len = x.leng; i < len; i++) {
+      myNewName.push(i % 2 === 0 ? x[i].toLowerCase() : x[i].toUpperCase());
+      return myNewName;
+    }
+  };
+  console.log(alterarNome(myName));
 })();
