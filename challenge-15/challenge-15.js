@@ -46,6 +46,10 @@ Crie um arquivo chamado index.html e adicione esse script ao HTML.
   var Emanuella = new Person('Emanuella', 'Tavares', 27);
   var Icaro = new Person('Icaro', 'Monteiro', 31);
   var Eduardo = new Person('Eduardo', 'Monteiro', 29);
+
+  console.log(Emanuella);
+  console.log(Icaro);
+  console.log(Eduardo);
   /*
   Mostre no console o nome completo de cada pessoa.
   */
