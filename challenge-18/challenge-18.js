@@ -101,6 +101,11 @@
   https://regex101.com/#javascript e verifique se as capturas estão
   corretas, para depois aplicar no código ;)
   */
+  var regexhtml = /\<(\w+)\>([^<]+)<\/\w+\>/g;
   console.log( '\nFazer replace dos textos das tags:' );
-  // ?
+  function replaceHtml(regex, arg1, arg2) {
+    return '<'+arg1+'>O texto dentro da tag '+arg1+' é "'+arg2+'"</'+arg1+'>\n';
+  }
+  var resultadoMatch = '<h1>Título da página</h1><p>Este é um parágrafo</p><footer>Rodapé</footer>'.replace(regexhtml, replaceHtml);
+  console.log(resultadoMatch);
 })();
