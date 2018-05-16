@@ -72,5 +72,5 @@
       removeLastItemIfItIsAnOperator();
     }
   }
-
+//
 })(window, document);
