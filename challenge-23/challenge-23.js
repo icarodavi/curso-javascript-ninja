@@ -37,7 +37,7 @@
     item.addEventListener('click', handleClickNumber, false);
   });
   $buttonCE.addEventListener('click', handleClickCE, false);
-  Array.prototype.forEach.call($buttonsOperations, function (item){
+  Array.prototype.forEach.call($buttonsOperations, function (item) {
     item.addEventListener('click', handleClickOperation, false);
   });
   $buttonEqual.addEventListener('click', handleClickEqual, false);
@@ -62,15 +62,19 @@
     return operations.some(function(operator) {
       return operator === lastItem;
     });
+  }
 
     function removeLastItemIfItIsAnOperator() {
-      if(isLastItemAndOperation())
+      if(isLastItemAndOperation()) 
       $visor.value = $visor.value.slice(0, -1);
     }
 
     function handleClickEqual() {
       removeLastItemIfItIsAnOperator();
+      var allValues = $visor.value.match(/(?:\d+)|[+x÷\-]/g);
+      allValues.reduce( function (accumulated, actual) {
+      return accumulated + actual;
+      });
     }
-  }
-//
+
 })(window, document);
